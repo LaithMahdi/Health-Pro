@@ -1,7 +1,8 @@
-import 'package:doctor/core/constant/app_family.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'core/constant/app_color.dart';
+import 'core/constant/app_family.dart';
+import 'core/constant/app_size.dart';
 import 'core/constant/app_string.dart';
 import 'routeurs/get_pages.dart';
 
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    AppSize().init(context);
+
     return GetMaterialApp(
       title: AppString.appName,
       debugShowCheckedModeBanner: false,
