@@ -4,9 +4,12 @@ import 'core/constant/app_color.dart';
 import 'core/constant/app_family.dart';
 import 'core/constant/app_size.dart';
 import 'core/constant/app_string.dart';
+import 'core/service/cache_service.dart';
 import 'routeurs/get_pages.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initialService();
   runApp(const MyApp());
 }
 

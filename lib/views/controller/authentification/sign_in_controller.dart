@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import '../../../core/constant/app_cache.dart';
 import '../../../core/constant/app_route.dart';
 
 class SignInController extends GetxController {
@@ -13,7 +13,10 @@ class SignInController extends GetxController {
   TextEditingController get password => _password;
   bool get obscurePassword => _obscurePassword;
 
-  void onSignIn() {}
+  void onSignIn() {
+    AppCache().setLogged();
+    Get.offAllNamed(AppRoute.home);
+  }
 
   void onSignUp() => Get.toNamed(AppRoute.signUp);
 

@@ -27,6 +27,8 @@ class AppImage {
   static const String doctor7 =
       "$baseUrl/doctor/What_are_the_Challenges_of_Being_a_Doctor_1001x665.webp";
 
+  static const String doctor = "$baseUrl/doctor/pngwing.com(7).png";
+
   // Speciality
   static const String brain =
       "$baseUrl/speciality/brain-illustration-4-svgrepo-com.svg";
